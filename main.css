@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #009a44 0%, #009a44 33%, #fff 33%, #fff 67%, #ff8200 67%, #ff8200 100% );
+}
+
+header{
+    display: flex;  
+    padding: 10px 10px;
+    background-color: #009a44;
+}
+
+header .logo{
+    display: flex; 
+    align-items: center;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-title{
+    border-bottom: 2px solid #009a44;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+header nav li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header img{
+    height: 60px;
+}
+
+#famous-places .container{
+    height: 720px;
+    margin: 5px auto 30px auto;    
+    padding: 0;
+}
+
+#famous-places video{    
+    border: 1px solid black;
+    max-width: 1264px;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 8px ;
+}
+
+#last-trips .container{
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#last-trips article{
+    width: 30%;
+}
+
+#last-trips article h3{
+    font-size: 24px;
+    text-align:left;
+    margin-bottom: 12px ;    
+    margin-top: 12px ;
+}
+
+#last-trips article p{
+    font-size: 18px;
+    text-align:left;
+    padding: 0px 3px;
+    margin-bottom: 10px;
+}
+
+#see-more-tours{
+    text-decoration: none;
+    background-color: #009a44;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#last-trips article a{
+    font-size: 20px;
+    text-decoration: none;    
+    background-color: #009a44;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#last-trips  {
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+#last-trips img{
+    height: 200px;
+    width: 100%;
+}
+
+#contact .container{
+    display: block;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 100px;
+}
+
+#pics .article-title{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.carousel-pics{
+    width: 100%;
+    height: 600px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display:none;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    cursor: default;
+}
+
+.carousel-pics img{
+    width: 100%;
+    height: 599px;
+    cursor: grab;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#contacts .article-title{
+    font-size: 36px;
+    text-align: center;
+}
+
+#contacts > .container{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contacts h2{
+    font-size: 32px;
+}
+
+.contact-methods h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact-methods button{
+    background-color: #009a44;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+    width: 40%;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+footer p{
+    border-top: 1px solid #009a44;
+    padding: 2.5px 5px;
+}
+
+@media screen and (max-width: 640px){
+
+    *{
+        overflow-x: hidden;
+    }
+
+    header .logo{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header .container{
+        display: block;
+        justify-content: space-between;
+    }
+    
+    .title{
+        width: 50%;
+    }
+    
+    header h1{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    header nav ul{
+        margin:10px 0;
+    }
+
+    header nav li{
+        display: inline;
+        margin: 4px;
+        font-size: 20px;
+    }
+    
+    header img{
+        height: 150px;
+    }
+
+    #famous-places .container{
+        margin: 5px auto 10px auto;    
+        padding: 0;
+        height: 100%;
+    }
+    
+    #famous-places video{    
+        border: 1px solid black;
+        max-width: 100%;
+    }
+    
+    #last-trips{
+        padding-bottom: 10px;
+
+    }
+
+    #last-trips .container{
+        display: block;
+    }
+    
+    #last-trips article{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 5px ;
+        margin-bottom: 15px;
+    }
+
+    .carousel-pics{
+        height: 100%;
+    }
+
+    #pics img{
+        height: 100%;
+    }
+
+    #contacts > .container{
+        padding-bottom: 5px;
+    }
+
+    .contact-methods{
+        display: block;
+    }
+
+    .contact-methods div{
+        margin-bottom: 10px;
+    }
+
+    .social-links, address{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #contacts address{
+        font-size: 18px;
+    }
+
+    .social-links img{
+        height: 28px;
+    }
+}
